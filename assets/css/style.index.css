@@ -1,10 +1,59 @@
+/*Reset CSSS*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    text-align: center;
+body {
+    background-color: f0f0f0;
 }
 
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color:  #d30000;
+}
+
+#postForm {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+label, 
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 500px;
+}
+
+textarea {
+resize: none;
+}
+
+button {
+    background-color: #d30000;
+    color: #ffffff;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.25rem;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #a00000;
+}

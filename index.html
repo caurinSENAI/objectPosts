@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.index.css">
+    <script src="assets/js/script.index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts</title>
 </head>
+
 <body>
+    <main>
+        <h1>Proximos Posts</h1>
 
-    <h1>Proximos Posts</h1>
+        <div id="postForm">
 
-    <div id="inputBox">
-        <label for="title">Titulo</label>
-        <input type="text" id="title" name="title" required>
-    </div>
+            <div>
+                <label for="title">Titulo</label>
+                <input type="text" id="title" name="title" required>
+            </div>
 
-    <div>
-        <label for="resume">Descrição</label>
-        <textarea type="text" id="resume" name="resume" rows="4" required></textarea>
-    </div>
+            <div>
+                <label for="resume">Descrição</label>
+                <textarea type="text" id="resume" name="resume" rows="4" required></textarea>
+            </div>
 
-    <div>
-        <label for="publisher">Autor</label>
-        <input type="text" id="publisher" name="publisher" required>
-    </div>
+            <div>
+                <label for="publisher">Autor</label>
+                <input type="text" id="publisher" name="publisher" required>
+            </div>
 
-    <div>
-        <label for="date">Data</label>
-        <input type="date" id="date" name="date" required>
-    </div>
-
-
-
-
+            <div>
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date" required>
+            </div>
 
 
-    <script src="assets/js/script.index.js"></script>
+            <button onclick="savePost()">Cadastrar</button>
+        </div>
+
+
+        <div id="list"></div>
+    </main>
+
+
+
+
 </body>
+
 </html>
